@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/second_color"
+    tools:context=".License_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/license_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="License"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/textView_license"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textSize="15sp"
+        android:fontFamily="@font/bahnschrift1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/license_toolbar" />
+
+    <TextView
+        android:layout_margin="0dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:id="@+id/Display_license_textview"
+        android:layout_height="500dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/bahnschrift1"
+        android:gravity="center_horizontal"
+        android:scrollbars="vertical"
+        android:text="License Appears here"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_license"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
